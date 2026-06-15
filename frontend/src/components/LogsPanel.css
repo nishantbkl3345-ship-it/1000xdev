@@ -1,0 +1,74 @@
+.logs-panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.logs-panel__title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.logs-panel__list {
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 12px;
+}
+
+.logs-panel__entry {
+  display: flex;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #f9fafb;
+}
+
+.logs-panel__time {
+  color: #9ca3af;
+  flex-shrink: 0;
+  width: 54px;
+}
+
+.logs-panel__level {
+  font-weight: 600;
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.logs-panel__msg {
+  color: #374151;
+}
+
+/* Level colors */
+.log--info .logs-panel__level {
+  color: #3b82f6;
+}
+
+.log--success .logs-panel__level {
+  color: #16a34a;
+}
+
+.log--warning .logs-panel__level {
+  color: #d97706;
+}
+
+.log--error .logs-panel__level {
+  color: #dc2626;
+}
+
+.log--error {
+  background: #fef2f2;
+}
+
+.log--success {
+  background: #f0fdf4;
+}

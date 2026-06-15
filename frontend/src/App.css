@@ -1,0 +1,59 @@
+.app {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ─── Header ─────────────────────────────────────────────── */
+
+.app__header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.app__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.app__logo-icon {
+  font-size: 22px;
+}
+
+.app__tagline {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* ─── Input Section ──────────────────────────────────────── */
+
+.app__input-section {
+  margin-bottom: 4px;
+}
+
+/* ─── Results ────────────────────────────────────────────── */
+
+.app__results {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.app__duration {
+  font-size: 13px;
+  color: #6b7280;
+  text-align: right;
+}
+
+.app__duration strong {
+  color: #374151;
+}

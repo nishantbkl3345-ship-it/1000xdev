@@ -1,0 +1,76 @@
+.url-input {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.url-input__wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.url-input__field {
+  width: 100%;
+  padding: 12px 16px;
+  padding-right: 110px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a2e;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.url-input__field:focus {
+  border-color: #4f46e5;
+}
+
+.url-input__field:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.url-input__badge {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #4f46e5;
+  background: #eef2ff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.url-input__btn {
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.url-input__btn:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+.url-input__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .url-input {
+    flex-direction: column;
+  }
+}
